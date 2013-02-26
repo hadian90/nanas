@@ -1,6 +1,6 @@
 <?php
 //production mode
-//ini_set('display_errors',1);
+ini_set('display_errors',1);
 
 //detect a mobile
 //require 'libs/mobiledetect.php';
