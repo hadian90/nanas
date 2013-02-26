@@ -2,6 +2,8 @@
 
 class home_model extends Model {
 
+	//ni fared buat
+
 	public $tableName = 'users';
 
 	function __construct() {
