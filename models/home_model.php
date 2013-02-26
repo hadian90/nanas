@@ -2,7 +2,7 @@
 
 class home_model extends Model {
 
-	//ni fared buat
+	//ni fared cube lg ni, tau?
 
 	public $tableName = 'users';
 
