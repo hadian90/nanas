@@ -45,11 +45,12 @@ Asas bagi MVC adalah:
 
 <h2>FIXHEADER</h2>
 - Fixheader adalah satu cara dimana semua link esset didalam fail view tidak perlu diubah. Fixheader wajib diletakkan didalam dead setiap fail view, code fixheader ialah 
-<div class="codebox">
+
+<span class="codebox">
     <code>   
         <?= $this->fixheaderl ?>
     </code>
-</div>
+</span>
 
 <h2>Bonus</h2>
 
