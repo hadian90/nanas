@@ -28,7 +28,7 @@ Asas bagi MVC adalah:
 - Setakat ini nanas hanya pernah dibangunkan dengan database MYSQL. Ini kerana Nanas menggunakan MySQLi didalam Model. Tetapi database lain juga boleh digunakan tetapi anda perlu mengubah fail Model dalam libs.
 
 <h2>FIXHEADER</h2>
-- Fixheader adalah satu cara dimana semua link esset didalam fail view tidak perlu diubah. Fixheader wajib diletakkan didalam dead setiap fail view, code fixheader ialah <?= $this->fixheaderl ?>
+- Fixheader adalah satu cara dimana semua link esset didalam fail view tidak perlu diubah. Fixheader wajib diletakkan didalam dead setiap fail view, code fixheader ialah <?= $this->fixheader; ?>
 
 <h2>Bonus</h2>
 
