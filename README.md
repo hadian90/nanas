@@ -1,6 +1,22 @@
 nanas
 =====
 
+<style type="text/css">
+.codebox {
+	/* Below are styles for the codebox (not the code itself) */
+	border:1px solid black;
+	background-color:#EEEEFF;
+	width:300px;
+	overflow:auto;    
+	padding:10px;
+}
+.codebox code {
+	/* Styles in here affect the text of the codebox */
+	font-size:0.9em;
+	/* You could also put all sorts of styling here, like different font, color, underline, etc. for the code. */
+}
+</style>
+
 Simplest MVC php Framework
 
 <h1>How It Works</h1>
@@ -28,7 +44,12 @@ Asas bagi MVC adalah:
 - Setakat ini nanas hanya pernah dibangunkan dengan database MYSQL. Ini kerana Nanas menggunakan MySQLi didalam Model. Tetapi database lain juga boleh digunakan tetapi anda perlu mengubah fail Model dalam libs.
 
 <h2>FIXHEADER</h2>
-- Fixheader adalah satu cara dimana semua link esset didalam fail view tidak perlu diubah. Fixheader wajib diletakkan didalam dead setiap fail view, code fixheader ialah <?= $this->fixheaderl ?>
+- Fixheader adalah satu cara dimana semua link esset didalam fail view tidak perlu diubah. Fixheader wajib diletakkan didalam dead setiap fail view, code fixheader ialah 
+<div class="codebox">
+    <code>   
+        <?= $this->fixheaderl ?>
+    </code>
+</div>
 
 <h2>Bonus</h2>
 
@@ -38,7 +59,13 @@ A: Ajaxs
 Fail view: index.php
 Fail ajax: index_ajax.js
 
--kemudian tambah code php ini <?= $ajax; ?> dalam fail view. Dengan ini fail ajax tersebut akan dipangil didalam fail view.
+-kemudian tambah code php ini 
+<div class="codebox">
+    <code>   
+        <?= $ajax; ?> 
+    </code>
+</div>
+dalam fail view. Dengan ini fail ajax tersebut akan dipangil didalam fail view.
 
 <h1>Cara Penggunaan</h1>
 
