@@ -1,7 +1,6 @@
 nanas
 =====
 
-<<<<<<< HEAD
 Simplest MVC php Framework
 
 <h1>How It Works</h1>
@@ -27,4 +26,3 @@ Asas bagi MVC adalah:
 
 <h1>Cara Penggunaan</h1>
 
->>>>>>> update readme
