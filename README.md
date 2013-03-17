@@ -24,5 +24,24 @@ Asas bagi MVC adalah:
 <h3>C: Controller</h3>
 - Controller seperti dalam terjemahan merupakan ketua atau pengawal segala pengaturcaraan didalam Nanas. Controller merupakan nadi dalam MVC. Controller tertujuan untuk memanggil kelas Model untuk mendapatkan data dan memanggil kelas View untuk dipaparkan kepada pengguna.
 
+<h2>MYSQLI</h2>
+- Setakat ini nanas hanya pernah dibangunkan dengan database MYSQL. Ini kerana Nanas menggunakan MySQLi didalam Model. Tetapi database lain juga boleh digunakan tetapi anda perlu mengubah fail Model dalam libs.
+
+<h2>FIXHEADER</h2>
+- Fixheader adalah satu cara dimana semua link esset didalam fail view tidak perlu diubah. Fixheader wajib diletakkan didalam dead setiap fail view, code fixheader ialah <?= $this->fixheaderl ?>
+
+<h2>Bonus</h2>
+
+A: Ajaxs
+- Ajax adalah satu cara dimana sistem dalam membuat permintaan ke server tanpa menggangu paparan pengguna. Didalam nanas ajax dapat diaturcara berasingan dengan javascript paparan kerana Nanas terdapat folder Ajax berasingan. Untuk nanas, pengguna ajax dapat dilakukan dengan membuat fail javascript dengan nama sama seperti file view, contoh: 
+
+Fail view: index.php
+Fail ajax: index_ajax.js
+
+-kemudian tambah code php ini <?= $ajax; ?> dalam fail view. Dengan ini fail ajax tersebut akan dipangil didalam fail view.
+
 <h1>Cara Penggunaan</h1>
 
+Clone atau zip nanas kedalam komputer anda. Copy nanas didalam folder website seperti htdocs atau www. Pastikan anda mengubah file configure.php didalam folder libs.Untuk pembangunan localhost, anda digalakkan menggunakan IP didalam configure FIXHEADER. Ini kerana ajaxs tidak akan berfungsi tanpa IP. Pastikan database configure diubah mengikut database anda.
+
+Cara penggunaan akan dikemaskini 
