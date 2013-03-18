@@ -14,6 +14,7 @@ require 'libs/Controller.php';
 require 'libs/View.php';
 require 'libs/Model.php';
 require 'libs/Session.php';
+require 'libs/Cookie.php';
 
 $app = new url();
 
