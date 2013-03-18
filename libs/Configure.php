@@ -7,7 +7,7 @@ define('DB_PASSWORD', 				'root');
 define('DB_NAME', 					'Scholarlist');
 
 // configuration for view
-define('VIEW_FIXHEADER',			"<base href='http://169.254.64.61/scholarlist/views/' target='_self'>");
+define('VIEW_FIXHEADER',			"http://169.254.64.61/scholarlist/views/");
 
 // configuration for facebook
 define('FB_APP_ID',					'319106231524707');

@@ -7,7 +7,8 @@ class url {
 		if (isset($_GET['url'])){
 			$url = $_GET['url'];
 		} else {
-			header('Location: home');
+			//header('Location: home');
+			$url = 'home';
 		}
 
 		$url = rtrim($url, '/');
