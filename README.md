@@ -28,18 +28,16 @@ Asas bagi MVC adalah:
 - Setakat ini nanas hanya pernah dibangunkan dengan database MYSQL. Ini kerana Nanas menggunakan MySQLi didalam Model. Tetapi database lain juga boleh digunakan tetapi anda perlu mengubah fail Model dalam libs.
 
 <h2>FIXHEADER</h2>
-- Fixheader adalah satu cara dimana semua link esset didalam fail view tidak perlu diubah. Fixheader wajib diletakkan didalam head setiap fail view, code fixheader ialah <?= $this->fixheader; ?>
+- Fixheader adalah satu cara dimana semua link esset didalam fail view tidak perlu diubah. Disebab fixheader, segala link didalam fail view akan di'redirect' ke url fixheader
 
 <h2>Bonus</h2>
 
 A: Ajaxs
 - Ajax adalah satu cara dimana sistem dalam membuat permintaan ke server tanpa menggangu paparan pengguna. Didalam nanas ajax dapat diaturcara berasingan dengan javascript paparan kerana Nanas terdapat folder Ajax berasingan. Untuk nanas, pengguna ajax dapat dilakukan dengan membuat fail javascript dengan nama sama seperti file view, contoh: 
-
-Fail view: index.php
-Fail ajax: index_ajax.js
-
-- kemudian tambah code php ini <?= $ajax; ?> 
-
+<br>
+Fail view: index.php <br>
+Fail ajax: index_ajax.js<br>
+<br>
 dalam fail view. Dengan ini fail ajax tersebut akan dipangil didalam fail view.
 
 <h1>Cara Penggunaan</h1>
