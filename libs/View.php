@@ -29,7 +29,7 @@ class View {
 	protected function callAjax($name){
 		$file = 'ajaxs/'.strtolower($name).'_ajax.js';
 		if (file_exists($file)) {
-			return '<script src="../'.$file.'"><script>';
+			return '<script src="http://code.jquery.com/jquery-latest.js"></script><script src="../'.$file.'"></script>';
 		}
 	}
 }
