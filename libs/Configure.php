@@ -6,14 +6,17 @@
 * Description : Configuration for Nanas Framework
 ******************************************************************************/
 
-// configuration for database
+//choose 1 for mysqli and 2 for PDO with easydb
+define('DB_TECH',					'2');
+
+// configuration for database setting
 define('DB_DOMAIN', 				'localhost');
 define('DB_USER', 					'root');
 define('DB_PASSWORD', 				'root');
 define('DB_NAME', 					'MyMuseumTest');
 
 // configuration for view
-define('VIEW_FIXHEADER',			"http://192.168.0.110/MyMuseum/views/");
+define('VIEW_FIXHEADER',			"http://192.168.0.119/MyMuseum/views/");
 
 // configuration for facebook
 define('FB_APP_ID',					'319106231524707');

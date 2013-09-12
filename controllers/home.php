@@ -10,6 +10,10 @@ class home extends Controller {
 	public function home() {
 		$this->view->render('Home');
 	}
+	
+	public function test() {
+		print_r($this->model->test());
+	}
 
 }
 

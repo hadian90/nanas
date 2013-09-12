@@ -4,7 +4,7 @@ class home_model extends Model {
 
 	//ni fared cube lg ni, tau?
 
-	public $tableName = 'users';
+	public $tableName = 'artifak';
 
 	function __construct() {
 		parent::__construct();
@@ -36,6 +36,14 @@ class home_model extends Model {
 
 		//resturn result
 		return $result;
+	}
+	
+	public function test(){
+		
+		$sql = 'SELECT item_name,item_id FROM '.$this->tableName.' WHERE item_gallery = :id';
+		$params = array(':id' => 'A');
+		
+		return $this->easydb->stmt($sql,$params);
 	}
 
 }
