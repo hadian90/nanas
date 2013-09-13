@@ -16,7 +16,7 @@ define('DB_PASSWORD', 				'root');
 define('DB_NAME', 					'MyMuseumTest');
 
 // configuration for view
-define('VIEW_FIXHEADER',			"http://192.168.0.119/MyMuseum/views/");
+define('VIEW_FIXHEADER',			"http://".$_SERVER['HTTP_HOST']."/MyMuseum/views/");
 
 // configuration for facebook
 define('FB_APP_ID',					'319106231524707');
