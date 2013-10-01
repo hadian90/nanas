@@ -25,7 +25,7 @@ class View {
 	**************************************************************************/
 	public function render($file_name, $data = null) {
 		$ajax = $this->callAjax($file_name);
-		$fixheader = '<base href="'.$this->fixheader.'" target="_self"';
+		$fixheader = '<base href="'.$this->fixheader.'" target="_self">';
 		$url = 'views/'.$file_name.'.php';
 		
 		require $url;
@@ -51,7 +51,7 @@ class View {
 
 		$content1 = $this->content($content_file);
 		$ajax = $this->callAjaxContent($file_name,$content_file);
-		$fixheader = '<base href="'.$this->fixheader.'" target="_self"';
+		$fixheader = '<base href="'.$this->fixheader.'" target="_self">';
 		$url = 'views/'.$file_name.'.php';
 		
 		require $url;
@@ -70,7 +70,7 @@ class View {
 		$content1 = $this->content($content_file1);
 		$content2 = $this->content($content_file2);
 		$ajax = $this->callAjaxContent($file_name,$content_file1);
-		$fixheader = '<base href="'.$this->fixheader.'" target="_self"';
+		$fixheader = '<base href="'.$this->fixheader.'" target="_self">';
 		$url = 'views/'.$file_name.'.php';
 		
 		require $url;
