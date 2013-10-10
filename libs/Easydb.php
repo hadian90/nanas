@@ -14,7 +14,12 @@ class Easydb {
 		$this->db = $database;
 	}
 	
-	function stmt($sql,$params){
+	function stmt($sql,$params = null){
+
+		if ($params == null){
+			$params = array(':id' => '');
+		}
+
 		$stmt = $this -> db ->prepare($sql);
     
 		$stmt->execute($params);
