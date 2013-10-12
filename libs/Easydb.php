@@ -24,7 +24,7 @@ class Easydb {
     
 		$stmt->execute($params);
 		
-		return $stmt->fetchAll();
+		return $stmt->fetchAll(PDO::FETCH_ASSOC);
 	}
 	
 	//future function -------------------------------------------------------
