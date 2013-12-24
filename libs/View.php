@@ -21,10 +21,22 @@ class View {
 	* function			: render        	
 	* Description		: display a single view 
 	* Input Parameters	: filename - name of views file without .php
-	*					  data - array of data that need to be show in views
+	*					  contentfile - name of content in view file 
+	*					  contentfile1 - name of content in view file 
+	*					  data - array of data that need to be show in views 
 	**************************************************************************/
-	public function render($file_name, $data = null) {
+	public function render($data = null, $file_name, $contentfile = null, $contentfile1 = null) {
 		$ajax = $this->callAjax($file_name);
+
+		if ($contentfile1!=null&&$contentfile!=null) {
+			$content1 = $this->content($content_file);
+			$content2 = $this->content($content_file1);
+			$ajax = $this->callAjaxContent($file_name,$content_file);
+		} else if ($contentfile!=null) {
+			$content1 = $this->content($content_file);
+			$ajax = $this->callAjaxContent($file_name,$content_file);
+		} 
+		
 		$fixheader = '<base href="'.$this->fixheader.'" target="_self">';
 		$url = 'views/'.$file_name.'.php';
 		
@@ -38,42 +50,6 @@ class View {
 	**************************************************************************/
 	public function content($file_name) {
 		return $file_name.'.php';
-	}
-	
-	/**************************************************************************
-	* function			: renderContent       	
-	* Description		: display a view with a content inside
-	* Input Parameters	: filename - name of views file without .php
-	*					  contentfile - name of content in view file 
-	*					  data - array of data that need to be show in views 
-	**************************************************************************/
-	public function renderContent($file_name, $content_file, $data = null) {
-
-		$content1 = $this->content($content_file);
-		$ajax = $this->callAjaxContent($file_name,$content_file);
-		$fixheader = '<base href="'.$this->fixheader.'" target="_self">';
-		$url = 'views/'.$file_name.'.php';
-		
-		require $url;
-	}
-	
-	/**************************************************************************
-	* function			: renderContentDouble    	
-	* Description		: display a view with two content inside
-	* Input Parameters	: filename - name of views file without .php
-	*					  contentfile1 - name of content in view file 
-	*					  contentfile2 - name of content in view file 
-	*					  data - array of data that need to be show in views 
-	**************************************************************************/
-	public function renderContentDouble($file_name, $content_file1, $content_file2, $data = null) {
-
-		$content1 = $this->content($content_file1);
-		$content2 = $this->content($content_file2);
-		$ajax = $this->callAjaxContent($file_name,$content_file1);
-		$fixheader = '<base href="'.$this->fixheader.'" target="_self">';
-		$url = 'views/'.$file_name.'.php';
-		
-		require $url;
 	}
 	
 	/**************************************************************************
