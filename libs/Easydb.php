@@ -27,6 +27,10 @@ class Easydb {
 		return $stmt->fetchAll(PDO::FETCH_ASSOC);
 	}
 	
+	function lastinsertedid(){
+		return $this -> db -> lastInsertId();
+	}
+	
 	//future function -------------------------------------------------------
 	
 	function insert($tableName,$params){
