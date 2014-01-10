@@ -8,7 +8,7 @@ class home extends Controller {
 
 	//experimental function
 	public function home() {
-		$this->view->render('Home');
+		$this->view->render($data,'Home');
 	}
 	
 	public function test() {

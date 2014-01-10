@@ -10,10 +10,10 @@ class Error extends Controller {
 	}
 
 	public function not_found(){
-		$this->view->render('error/404');
+		$this->view->render($data,'error/404');
 	}
 
 	public function not_acceptable(){
-		$this->view->render('error/406');
+		$this->view->render($data,'error/406');
 	}
 }
