@@ -14,6 +14,6 @@ class Error extends Controller {
 	}
 
 	public function not_acceptable(){
-		$this->view->render($data,'error/406');
+		$this->view->render($data,q'error/406');
 	}
 }
